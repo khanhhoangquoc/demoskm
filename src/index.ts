@@ -1,18 +1,23 @@
-/**
- * Welcome to Cloudflare Workers! This is your first worker.
- *
- * - Run `npm run dev` in your terminal to start a development server
- * - Open a browser tab at http://localhost:8787/ to see your worker in action
- * - Run `npm run deploy` to publish your worker
- *
- * Bind resources to your worker in `wrangler.toml`. After adding bindings, a type definition for the
- * `Env` object can be regenerated with `npm run cf-typegen`.
- *
- * Learn more at https://developers.cloudflare.com/workers/
- */
-
-export default {
-	async fetch(request, env, ctx): Promise<Response> {
-		return new Response('Hello World!');
-	},
-} satisfies ExportedHandler<Env>;
+export interface Env {
+    DB: d1db;
+  }
+  
+  export default {
+    async fetch(request, env): Promise<Response> {
+      const { pathname } = new URL(request.url);
+  
+      if (pathname === "/api/beverages") {
+        // If you did not use `DB` as your binding name, change it here
+        const { results } = await env.DB.prepare(
+          "SELECT * FROM Users WHERE CompanyName = ?",
+        )
+          .bind("None")
+          .all();
+        return Response.json(results);
+      }
+  
+      return new Response(
+        "Call /api/beverages to see everyone who works at Bs Beverages",
+      );
+    },
+  } satisfies ExportedHandler<Env>;
