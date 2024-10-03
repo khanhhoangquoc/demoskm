@@ -5,7 +5,7 @@
   "scripts": {
     "db:new": "NO_D1_WARNING=true wrangler d1 create northwind --experimental-backend",
     "db:init": "NO_D1_WARNING=true wrangler d1 execute northwind --file=./db/schema.sql",
-    "db:load": "NO_D1_WARNING=true wrangler d1 execute northwind --file=./db/data-big.sql --batch-size=50000"
+    "db:load": "NO_D1_WARNING=true wrangler d1 execute northwind --file=./db/data.sql --batch-size=50000"
   },
   "workspaces": [
     "worker",

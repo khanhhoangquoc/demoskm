@@ -10,7 +10,7 @@
     "dev": "NO_D1_WARNING=true wrangler dev",
     "deploy": "NO_D1_WARNING=true wrangler deploy",
     "local:init": "NO_D1_WARNING=true wrangler d1 execute northwind --file=../db/schema.sql --local",
-    "local:load": "NO_D1_WARNING=true wrangler d1 execute northwind --file=../db/data-big.sql --local"
+    "local:load": "NO_D1_WARNING=true wrangler d1 execute northwind --file=../db/data.sql --local"
   },
   "keywords": [],
   "author": "",
