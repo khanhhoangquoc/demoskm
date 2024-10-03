@@ -3,7 +3,6 @@ name = "skmdemo"
 main = "src/index.ts"
 compatibility_date = "2024-09-25"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "./dist"
 CLOUDFLARE_API_TOKEN = "e390069829d3a7c13440d50202ff414180bd2"
 
 # Workers Logs
