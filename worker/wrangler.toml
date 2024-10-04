@@ -3,7 +3,6 @@ main = "index.ts"
 name = "demoskm-worker"
 route = "api.demoskm.d1sql.com/*"
 pages_build_output_dir = "./dist"
-CLOUDFLARE_API_TOKEN = "z5kX_u7xTOQYG-AWnwIncgQlmQxXOuGArCshNxgu"
 
 [[d1_databases]]
 binding = "DB"

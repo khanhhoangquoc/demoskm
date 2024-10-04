@@ -3,7 +3,6 @@ name = "skmdemo"
 main = "src/index.ts"
 compatibility_date = "2024-09-25"
 compatibility_flags = ["nodejs_compat"]
-CLOUDFLARE_API_TOKEN = "z5kX_u7xTOQYG-AWnwIncgQlmQxXOuGArCshNxgu"
 
 # Workers Logs
 # Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
