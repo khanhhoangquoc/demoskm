@@ -11,3 +11,4 @@ database_id = "30ea04cd-1511-4ac8-a8ba-da3ff58c0e49"
 
 [observability]
 enabled = true
+head_sampling_rate = 0.1
