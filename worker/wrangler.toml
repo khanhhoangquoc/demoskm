@@ -6,8 +6,8 @@ pages_build_output_dir = "./dist"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "workerskm1-db"
-database_id = "30ea04cd-1511-4ac8-a8ba-da3ff58c0e49"
+database_name = "northwind"
+database_id = "b05ecb65-f065-4186-806e-cc1bf6913a0b"
 
 [observability]
 enabled = true
