@@ -7,6 +7,5 @@ wasm-pack.log
 node_modules/
 .cargo-ok
 .githelp
-dist
 .wrangler
 .DS_Store
