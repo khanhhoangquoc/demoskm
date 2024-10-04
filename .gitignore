@@ -6,7 +6,6 @@ pkg/
 wasm-pack.log
 node_modules/
 .cargo-ok
-.env
 .githelp
 dist
 .wrangler
