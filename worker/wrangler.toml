@@ -2,7 +2,7 @@ compatibility_date = "2022-04-05"
 main = "index.ts"
 name = "demoskm-worker"
 route = "api.demoskm.d1sql.com/*"
-pages_build_output_dir = "./dist"
+pages_build_output_dir = "./public"
 
 [[d1_databases]]
 binding = "DB"
