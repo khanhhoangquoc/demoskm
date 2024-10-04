@@ -1,3 +1,4 @@
+name = "demoskm-frontend"
 compatibility_date = "2023-05-12"
 pages_build_output_dir = "./dist"
 
