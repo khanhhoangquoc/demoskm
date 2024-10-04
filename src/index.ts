@@ -9,9 +9,9 @@ export interface Env {
       if (pathname === "/api/beverages") {
         // If you did not use `DB` as your binding name, change it here
         const { results } = await env.DB.prepare(
-          "SELECT * FROM Users WHERE CompanyName = ?",
+          "SELECT * FROM Customer WHERE ContactTitle = ?",
         )
-          .bind("None")
+          .bind("Owner")
           .all();
         return Response.json(results);
       }
